@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8">
+  <title>POS Satay Queen</title>
+  <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #121212;
+  color: #f5f5f5;
+}
+header {
+  background: #1c1c1c;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 1px solid #333;
+}
+header h1 {
+  margin: 0;
+  font-size: 26px;
+  color: #d4af37;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding: 30px 20px;
+}
+.left, .right {
+  background: #1e1e1e;
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+}
+.left {
+  flex: 2;
+  min-width: 300px;
+}
+.right {
+  flex: 1;
+  min-width: 280px;
+}
+.section {
+  margin-bottom: 24px;
+}
+.section h3 {
+  color: #d4af37;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+.menu-category {
+  margin-top: 15px;
+}
+.menu-category h4 {
+  margin: 10px 0 5px;
+  border-bottom: 1px solid #555;
+  font-size: 14px;
+  color: #e0e0e0;
+}
+.menu-category .menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 10px;
+}
+.menu button, .tables button, button {
+  background: #d4af37;
+  color: #121212;
+  border: none;
+  padding: 10px;
+  font-size: 13px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s ease;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+}
+.menu button:hover, .tables button:hover, button:hover {
+  background: #f5d76e;
+}
+#tables {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin-top: 10px;
+}
+ul {
+  padding-left: 18px;
+  font-size: 13px;
+}
+.cancel-btn {
+  color: #999;
+  margin-left: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  #tables {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f3f6f4;
+  color: #333;
+}
+header {
+  background: #e8f5e9;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 1px solid #c8e6c9;
+}
+header h1 {
+  margin: 0;
+  font-size: 26px;
+  color: #2e7d32;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding: 30px 20px;
+}
+.left, .right {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.05);
+}
+.left {
+  flex: 2;
+  min-width: 300px;
+}
+.right {
+  flex: 1;
+  min-width: 280px;
+}
+.section {
+  margin-bottom: 24px;
+}
+.section h3 {
+  color: #2e7d32;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+.menu-category {
+  margin-top: 15px;
+}
+.menu-category h4 {
+  margin: 10px 0 5px;
+  border-bottom: 1px solid #ccc;
+  font-size: 14px;
+  color: #444;
+}
+.menu-category .menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 10px;
+}
+.menu button, .tables button, button {
+  background: #388e3c;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 13px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+.menu button:hover, .tables button:hover, button:hover {
+  background: #2e7d32;
+}
+#tables {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin-top: 10px;
+}
+ul {
+  padding-left: 18px;
+  font-size: 13px;
+}
+.cancel-btn {
+  color: red;
+  margin-left: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  #tables {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+    body { font-family: sans-serif; padding: 20px; background: #f2f2f2; }
+    h2 { background: #d32f2f; color: white; padding: 10px; text-align: center; border-radius: 8px; }
+    .section { background: #fff; padding: 15px; margin-bottom: 20px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    .menu button, .tables button, button { margin: 5px; padding: 10px 15px; font-size: 16px; border: none; border-radius: 6px; cursor: pointer; background: #00796b; color: white; }
+    .menu-category { margin-top: 15px; }
+    .menu-category h4 { margin-bottom: 10px; }
+    .cancel-btn { color: red; font-weight: bold; margin-left: 10px; cursor: pointer; }
+  </style>
+</head>
+<body>
+
+
+<header style="background: #1a1a1a; padding: 24px; text-align: center; border-bottom: 1px solid #333;">
+  <h1 style="margin: 0; color: #ffd700; font-size: 28px; line-height: 1;">
+Satay Queen POS</h1>
+</header>
+
+
+
+<div class="container">
+<div class="left">
+  
+
+  <div class="section tables">
+    <h3>
+<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+     style="vertical-align:middle; margin-right:5px;" fill="#ffffff" stroke="#ffffff">
+  <path d="M3 10h18" stroke="#ffffff"/>
+  <path d="M3 14h18" stroke="#ffffff"/>
+  <path d="M10 3v18" stroke="#ffffff"/>
+  <path d="M14 3v18" stroke="#ffffff"/>
+</svg>
+Pilih Meja:</h3>
+    <div id="tables"></div>
+  </div>
+
+  <div class="section menu">
+    <h3>
+<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" style="vertical-align: text-bottom; margin-right:6px;" viewBox="0 0 24 24"
+     style="vertical-align:middle; margin-right:6px;" fill="#ffffff" stroke="#ffffff">
+  <path d="M4 3v7a3 3 0 0 0 3 3h0a3 3 0 0 0 3-3V3" fill="#ffffff" stroke="#ffffff"/>
+  <path d="M10 3h4v7a3 3 0 0 0 3 3h0a3 3 0 0 0 3-3V3" fill="#ffffff" stroke="#ffffff"/>
+</svg>
+Menu</h3>
+    <div class="menu-category"><h4>Satay</h4>
+      <button onclick="promptQty('Satay Ayam', 1.00)">Satay Ayam</button>
+      <button onclick="promptQty('Satay Daging', 1.00)">Satay Daging</button>
+      <button onclick="promptQty('Satay Perut', 1.60)">Satay Perut</button>
+      <button onclick="promptQty('Satay Kambing', 1.60)">Satay Kambing</button>
+    </div>
+    <div class="menu-category"><h4>Nasi Lemak</h4>
+      <button onclick="promptQty('Nasi Lemak Biasa', 3.00)">Biasa</button>
+      <button onclick="promptQty('Nasi Lemak Telur Mata', 4.50)">Telur Mata</button>
+      <button onclick="promptQty('Nasi Lemak Paru', 7.00)">Paru</button>
+      <button onclick="promptQty('Nasi Lemak Kerang', 7.00)">Kerang</button>
+      <button onclick="promptQty('Nasi Lemak Ayam Sambal', 7.00)">Ayam Sambal</button>
+      <button onclick="promptQty('Nasi Lemak Ayam Goreng', 6.00)">Ayam Goreng</button>
+      <button onclick="promptCustomNasiLemak()">Custom</button>
+    </div>
+    <div class="menu-category"><h4>Mee & Lain-lain</h4>
+      <button onclick="promptQty('Mee Kari', 7.00)">Mee Kari</button>
+      <button onclick="promptQty('Laksa', 6.00)">Laksa</button>
+      <button onclick="promptQty('Mee Sup', 6.00)">Mee Sup</button>
+      <button onclick="promptQty('Bihun Sup', 6.00)">Bihun Sup</button>
+      <button onclick="promptQty('Keropok', 4.00)">Keropok</button>
+      <button onclick="promptQty('Rojak Buah', 6.00)">Rojak Buah</button>
+      <button onclick="promptAir()">Air</button>
+    </div>
+  </div>
+
+  </div>
+<div class="right">
+<div class="section cart">
+    <h3>Pesanan Meja <span id="selectedTable">-</span></h3>
+    <ul id="cartList"></ul>
+    <p><strong>Total: RM <span id="total">0.00</span></strong></p>
+    <button onclick="checkoutAndPrint()">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+     style="vertical-align:middle; margin-right:5px;" fill="#ffffff" stroke="#ffffff">
+  <path d="M6 9V2h12v7" fill="#ffffff" stroke="#ffffff"/>
+  <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2" fill="#ffffff" stroke="#ffffff"/>
+  <rect x="6" y="14" width="12" height="8" fill="#ffffff" stroke="#ffffff"/>
+</svg>
+Bayar & Cetak Resit</button>
+  </div>
+
+  <div class="section report">
+    <h3>Ringkasan Jualan (Hari Ini)</h3>
+    <ul id="report"></ul>
+    <p style="margin-top: 10px;"><strong>Total Jualan: RM <span id="totalSales">0.00</span></strong></p>
+    <button onclick="clearSales()">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+     style="vertical-align:middle; margin-right:5px;" fill="none" stroke="#ffffff">
+  <polyline points="23 4 23 10 17 10" stroke="#ffffff"/>
+  <path d="M20.49 15A9 9 0 1 1 12 3h1" stroke="#ffffff"/>
+</svg>
+Reset Jualan Harian</button>
+  </div>
+
+<script>
+let currentTable = null;
+let carts = {};
+
+window.addEventListener('DOMContentLoaded', function () {
+  const tablesDiv = document.getElementById("tables");
+  for (let i = 1; i <= 10; i++) {
+    const btn = document.createElement("button");
+    btn.innerText = "Meja " + i;
+    btn.onclick = () => selectTable(i);
+    tablesDiv.appendChild(btn);
+  }
+  loadReport();
+});
+
+function selectTable(num) {
+  currentTable = "meja" + num;
+  if (!carts[currentTable]) carts[currentTable] = [];
+  document.getElementById("selectedTable").innerText = num;
+  updateCart();
+}
+
+function promptQty(item, price) {
+  if (!currentTable) return alert("Pilih meja dulu");
+  const qty = parseInt(prompt("Berapa " + item + "?"), 10);
+  if (!qty || qty <= 0) return;
+  const found = carts[currentTable].find(x => x.item === item);
+  if (found) found.qty += qty;
+  else carts[currentTable].push({ item, price, qty });
+  updateCart();
+}
+
+function promptAir() {
+  if (!currentTable) return alert("Pilih meja dulu");
+  const airName = prompt("Nama air:");
+  const airPrice = parseFloat(prompt("Harga air (contoh: 3.50):"));
+  if (!airName || !airPrice) return;
+  carts[currentTable].push({ item: airName, price: airPrice, qty: 1 });
+  updateCart();
+}
+
+function promptCustomNasiLemak() {
+  if (!currentTable) return alert("Pilih meja dulu");
+  const name = prompt("Nama Nasi Lemak:");
+  const price = parseFloat(prompt("Harga:"));
+  const qty = parseInt(prompt("Kuantiti:"), 10);
+  if (!name || !price || !qty) return;
+  carts[currentTable].push({ item: name, price, qty });
+  updateCart();
+}
+
+function updateCart() {
+  if (!currentTable) return;
+  const cart = carts[currentTable];
+  const cartList = document.getElementById("cartList");
+  cartList.innerHTML = '';
+  let total = 0;
+  cart.forEach((item, i) => {
+    const li = document.createElement("li");
+    li.innerHTML = `${item.item} x ${item.qty} - RM${(item.price * item.qty).toFixed(2)} <span class="cancel-btn" onclick="removeItem(${i})">[X]</span>`;
+    cartList.appendChild(li);
+    total += item.price * item.qty;
+  });
+  document.getElementById("total").innerText = total.toFixed(2);
+}
+
+function removeItem(index) {
+  if (!currentTable) return;
+  carts[currentTable].splice(index, 1);
+  updateCart();
+}
+
+function checkoutAndPrint() {
+  if (!currentTable || !carts[currentTable].length) return alert("Tiada item");
+
+  const today = new Date().toISOString().slice(0, 10);
+  const sales = JSON.parse(localStorage.getItem('sales') || '{}');
+  sales[today] = sales[today] || [];
+  carts[currentTable].forEach(item => {
+    for (let i = 0; i < item.qty; i++) {
+      sales[today].push({ item: item.item, price: item.price });
+    }
+  });
+  localStorage.setItem('sales', JSON.stringify(sales));
+
+  let resit = "KEDAI SATAY QUEEN\n";
+  resit += `Tarikh: ${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()}\n`;
+  resit += `Meja: ${currentTable.replace('meja', '')}\n\n`;
+  let total = 0;
+  let jumlahItem = 0;
+  carts[currentTable].forEach(({ item, price, qty }) => {
+    resit += `${item} x ${qty} - RM${(price * qty).toFixed(2)}\n`;
+    total += price * qty;
+    jumlahItem += qty;
+  });
+  resit += `------------------------\n`;
+  resit += `Jumlah Item: ${jumlahItem} item\n`;
+  resit += `TOTAL: RM${total.toFixed(2)}\n`;
+  resit += `\nTerima kasih datang lagi...\n`;
+
+  window.location.href = `rawbt:print?text=${encodeURIComponent(resit)}`;
+  carts[currentTable] = [];
+  updateCart();
+  loadReport();
+}
+
+function loadReport() {
+  const today = new Date().toISOString().slice(0, 10);
+  const sales = JSON.parse(localStorage.getItem('sales') || '{}');
+  const todaySales = sales[today] || [];
+  const report = {};
+  let total = 0;
+  todaySales.forEach(({ item, price }) => {
+    report[item] = (report[item] || 0) + 1;
+    total += price;
+  });
+  const reportList = document.getElementById("report");
+  const totalSalesText = document.getElementById("totalSales");
+  reportList.innerHTML = '';
+  for (const [item, qty] of Object.entries(report)) {
+    const li = document.createElement("li");
+    li.innerText = `${item} x ${qty}`;
+    reportList.appendChild(li);
+  }
+  totalSalesText.innerText = total.toFixed(2);
+}
+
+function clearSales() {
+  const today = new Date().toISOString().slice(0, 10);
+  const sales = JSON.parse(localStorage.getItem('sales') || '{}');
+  const todaySales = sales[today] || [];
+
+  if (!todaySales.length) return alert("Tiada jualan untuk dipadam.");
+
+  let total = 0;
+  let totalItem = todaySales.length;
+  todaySales.forEach(({ price }) => total += price);
+
+  let resit = "Reset Jualan Harian\n";
+  resit += `Tarikh: ${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()}\n\n`;
+  resit += `Jumlah Item: ${totalItem}\n`;
+  resit += `Jumlah Jualan: RM${total.toFixed(2)}\n`;
+  resit += `\nTerima kasih datang lagi...\n`;
+
+  if (confirm(resit + "\n\nTeruskan reset?")) {
+    window.location.href = `rawbt:print?text=${encodeURIComponent(resit)}`;
+    delete sales[today];
+    localStorage.setItem('sales', JSON.stringify(sales));
+    loadReport();
+  }
+}
+</script>
+</div>
+</div>
+</body>
+</html>
